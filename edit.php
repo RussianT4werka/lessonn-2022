@@ -5,9 +5,7 @@ if(isset($_GET['id'])){
     $id = $_GET['id'];
     $article = editArticle($id);
 }
-
 ?>
-
 <form action="update.php" method="post">
     заголовок<br><input type="text" name="title" value="<?=$article['title'];?>"><br>
     <input type="hidden" name="id" value="<?=$id;?>">
